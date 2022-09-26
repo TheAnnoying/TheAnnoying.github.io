@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+body {
+    background-color: #36393f;
+    font-family: Varela Round;
+    animation: fadeIn 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hamburger-bar {
+    font-family: Material Design Icons;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    transition: 0.2s transform;
+    font-size: 3em;
+    text-shadow: 3px 3px 0 black;
+}
+
+.hamburger-bar:hover {
+    transform: rotate(90deg);
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+    text-shadow: 6px 6px 0px black;;
+}
+
+#title span {
+    font-family: ABC Ginto Nord Trial;
+}
+
+#about-me {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    background-color: #2f3136;
+    border-radius: 50px;
+}
+
+#about-me:hover {
+    background-color: #2b2c31;
+}
+
+#about-me-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#about-me-image img {
+    width: 450px;
+    height: 450px;
+}
+
+#about-me-text {
+    padding: 30px 30px 30px 0;
+}
+
+#about-me-title {
+    font-family: ABC Ginto Nord Trial;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 6px 6px 0px black;
+    padding-bottom: 10px;
+}
+
+#about-me-description {
+    color: white;
+    font-size: 2.3em;
+    text-shadow: 2px 2px 0px black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #about-me-description {
+      font-size: 1.5em;
+    }
+}
+  
+@media only screen and (max-width: 920px) {
+    #about-me-image img {
+      width: 300px;
+      height: 300px;
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+    }
+    #title {
+        font-size: 2.5em;
+        text-shadow: 4px 4px 0 black;
+    }
+    #about-me-text {
+    padding: 30px;
+    }
+  
+    #about-me-image {
+        order: 2;
+        align-items: center;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: grid;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 35px;
+    user-select: none;
+}
+
+.links a {
+    font-family: Material Design Icons;
+    text-decoration: none;
+    color: white;
+    font-size: 4em;
+    transition: 0.2s transform;
+    text-shadow: 3px 3px 0 black;
+}
+
+.links a:hover {
+    transform: rotate(-5deg);
+}
