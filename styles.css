@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
-
+@font-face {
+    font-family: ginto;
+    src: url(assets/ginto.TTF);
+}
 body {
     background-color: #36393f;
     font-family: Varela Round;
@@ -38,7 +41,7 @@ body {
 }
 
 #title span {
-    font-family: ABC Ginto Nord Trial;
+    font-family: ginto;
 }
 
 #about-me {
@@ -69,7 +72,7 @@ body {
 }
 
 #about-me-title {
-    font-family: ABC Ginto Nord Trial;
+    font-family: ginto;
     color: white;
     font-size: 2.5em;
     text-shadow: 6px 6px 0px black;
