@@ -3,6 +3,11 @@
     font-family: ginto;
     src: url(assets/ginto.TTF);
 }
+
+@font-face {
+    font-family: whitney;
+    src: url(assets/whitney.ttf)
+}
 body {
     background-color: #36393f;
     font-family: Varela Round;
@@ -145,4 +150,63 @@ body {
 
 .links a:hover {
     transform: rotate(-5deg);
+}
+
+#contact {
+    background: #2f3136;
+    color: white;
+    font-size: 1.8em;
+    margin-top: 15px;
+    transition: 0.2s;
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    text-align: center;
+    text-shadow: 3px 3px 0 black;
+    border: transparent;
+}
+
+#contact:hover {
+    background-color: #5865F2;
+    text-decoration: none;
+    font-size: 2.1em;
+    font-family: whitney;
+    text-shadow: 0px 0px 0 black;
+}
+
+.popup-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    min-width: 128px;
+    min-height: 128px;
+    background-color: #36393f;
+    font-family: "Varela Round", "Material Design Icons";
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.694);
+}
+.popup-banner {
+    display: flex;
+    font-size: 2.5em;
+    justify-content: flex-end;
+}
+
+.popup-close {
+    margin: 2px 5px -2px 0;
+    text-shadow: 2px 2px 0 black;
+}
+
+.popup-content {
+    padding: 0 20px 35px;
+    text-shadow: 2px 2px 0 black;
 }
