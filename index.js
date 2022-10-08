@@ -1,18 +1,14 @@
 globalThis.E = (e, t) => $(document.createElement(e, t))
 
-function showPopup() {
-    const popup = E("div").addClass("popup-container").append(
-        E("div").addClass("popup").append(
-            E("div").addClass("popup-banner").append(
-                E("div").addClass("popup-close").text("󰅖").on("click", () => popup.remove())
-            ),
-            E("div").addClass("popup-content").html(`
-                <h1>TheAnnoying#6068</h1>
-            `)
-        )
-    ).appendTo(document.body).on("click", e => {
-        if(e.target.classList[0] === "popup-container") {
-            popup.remove();
+$(document).ready(function(){
+    let clicked = false;
+    $(".contact").click(function(){
+        if(!clicked){
+            clicked = true;
+            return $(".contact").removeClass("contact").addClass("discord").html(`TheAnnoying<span>#6068</span>`)
+        } else {
+            clicked = false;
+            return $(".discord").removeClass("discord").addClass("contact").html("Contact me on Discord");
         }
     });
-}
+});
