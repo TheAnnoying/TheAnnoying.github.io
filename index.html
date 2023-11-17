@@ -11,34 +11,51 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta content="#c8141e" data-react-helmet="true" name="theme-color" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.5.55/css/materialdesignicons.min.css">
+    <style>
+        body {
+            font-family: sans-serif, sans;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10px;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 0 0 20px;
+            font-size: 1rem;
+        }
+
+        p span {
+            color: gray;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: black;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div id="top-right" onclick="openNav()" class="hamburger-bar">󰍜</div>
-        <a href="#">Home</a>
-        <a href="#" class="disabled">Projects</a>
-        <a href="#" class="disabled">Credits</a>
-    </div>
-    <h1 id="title">I'm <span>TheAnnoying</span></h1>
-    <div class="links">
-        <a href="https://github.com/TheAnnoying" target="_blank">󰊤</a>
-        <a href="https://twitter.com/TheAnnoying7" target="_blank">󰕄</a>
-        <a href="https://reddit.com/u/theannoying2" target="_blank">󰑍</a>
-        <a href="https://www.youtube.com/channel/UCSGu8Sanjnj2FjZVP0IU1EQ" target="_blank">󰗃</a>
-    </div>
-    <div id="about-me">
-        <div id="about-me-image">
-            <img src="assets/portrait.png">
-        </div>
-        <div id="about-me-text">
-            <div id='about-me-title'>About me</div>
-            <div id='about-me-description'>Hello, I'm TheAnnoying. I love playing Minecraft and making things such as servers, plugins and resource packs. I love making minecraft related "art" such as styled models, renders and other assets. I like making Discord Bots, and recently started making some websites.</div>
-        </div>
-    </div>
-    <button class="contact">Contact me on Discord</button>
+    <h1>this site was old and outdated</h1>
+    <p>i need to remake this <span>(i will some day)</span></p>
+    <a href="https://github.com/TheAnnoying/">
+        <img src="/assets/github-mark-white.png" width="20" />
+        <span>github</span>
+    </a>
 </body>
 </html>

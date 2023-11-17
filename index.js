@@ -4,4 +4,3 @@ function openNav(){
     $(".hamburger-bar").toggleClass("active");
     $(".sidebar").toggleClass("active");
 };
-
